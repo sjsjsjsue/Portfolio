@@ -1,0 +1,249 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 나눔 바른 고딕 */
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+ }
+ /* 티몬소리체 */
+@font-face {
+  font-family: 'TmonMonsori';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* cafe 24 단정해 */
+@font-face {
+  font-family: 'Cafe24Danjunghae';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Danjunghae.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  font-family: 'NanumBarunGothic';
+}
+/* header */
+.header{
+  width: 300px;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+  /* position: fixed;
+  z-index: 3; */
+}
+.header_main{
+  width: 250px;
+  height: 600px;  
+  margin: 16px;
+}
+/* 증명사진 */
+.id_photo{
+  width: 100px;
+  height: 120px;
+  background-color: lightcoral;
+  margin: 0px auto; 
+  border-radius: 5px;
+  /* 증명사진 내리고 싶은데 어케 내릴지 생각! */
+}
+/* header a tag */
+@font-face {
+  font-family: 'Cafe24Ssurround';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.a_tag{
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  
+}
+.a_tag a{
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Cafe24Ssurround';
+}
+
+.a_url{
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  margin: 2px;
+  position: relative;
+}
+.a_url i{
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  font-size: 30px;
+}
+.a_url:hover{
+  background-color: #5D5D5D;
+}
+/* 헤더 메뉴 */
+.header_menu{
+  height: 340px;
+  margin-top: 10px;
+}
+.header_menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800; 
+}
+.header_menu a:hover{
+  color: #BDBDBD;
+}
+.h_menu{
+  height: 56px;
+  font-size: 20px;
+  padding: 5px 0 0 5px;
+  display: flex;
+}
+/* main */
+.main{
+  width: 85%;
+  height: 100%;
+}
+/* main 이미지 */
+.main_top{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../image/codingimg.png); 
+  background-size: cover;
+  position: relative;
+}
+.main_top_wrap{
+  position: absolute;
+  left:20%;
+  top: 50%;
+}
+.main_top_write{
+  font-weight: 800;
+  font-size: 50px;
+  color: #fff;
+}
+/* main 글 */
+.main_bottom{
+  width: 100%;
+  /* height: 100%; */
+}
+.main_bottom_wrap{
+  width: 100%;
+}
+.m_menu{
+  width: 1200px;
+  margin: 0 auto;
+}
+/* about css 시작 */
+.about{
+  height: 450px;
+  background-color: lightsalmon;
+}
+
+/* 메인 메뉴 타이틀 제목 */
+.menu_title{
+  width: 300px;
+  height: 50px;
+  margin-left:10px;
+  padding: 10px;
+  font-size: 50px;
+  font-weight: 800;
+  font-family: 'TmonMonsori';
+  border-bottom: 3px outset black;
+}
+.about_bottom{
+  width: 1200px;
+  height: 350px;
+  display: flex;
+}
+.about_bottom_photo{
+  width: 300px;
+  margin: 20px;
+  background-color: lightsteelblue;
+}
+.about_bottom_side{
+  background-color: lightcyan;
+  width: 700px;
+  margin: 20px 20px 20px 0;
+  padding: 10px;
+}
+.about_bottom_title{
+  font-size: 30px;
+  font-family: 'Cafe24Danjunghae';
+}
+/* resume css 시작 */
+.resume{
+  background-color: lightslategray;
+  height: 600px;
+}
+.resume_bottom{
+  width: 1100px;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+/* 학력사항 시작 */
+.resume_education{
+  background-color: lightgreen;
+  width: 500px;
+  padding: 10px;
+  margin: 15px;
+}
+/* 이력서 소제목 타이틀 */
+.resume_title{
+  font-size: 30px;
+  font-family: 'Cafe24Danjunghae';
+}
+.resume_education_school{
+  border-left: 2px solid black;
+  font-size: 15px;
+}
+
+/* 대외활동 */
+.resume_activies{
+  background-color: lightsteelblue;
+  width: 500px;
+  margin: 15px 15px 15px 0;
+  padding: 10px;
+}
+/* portfolio css 시작 */
+.portfolio{
+  background-color: #f5f8fd;
+  height: 800px;
+  padding: 10px;
+}
+.portfolio_bottom{
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+.portfolio_db{
+  background-color: lightpink;
+  width: 600px; 
+  height: 600px;
+  margin: 20px;
+  padding: 10px;
+}
+.portfolio_deajeon{
+  background-color: lightseagreen;
+  width: 600px;
+  height: 600px;
+  padding: 10px;
+  margin: 20px 20px 20px 0;
+}
+/* skill css 시작 */
+.skill{
+  background-color: lightgreen;
+}
+.contact{
+  background-color: lightblue;
+}
