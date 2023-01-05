@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,30 +9,37 @@ body{
   font-style: normal;
   font-weight: 400;
   src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
-  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
- }
- /* 티몬소리체 */
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix')
+      format('embedded-opentype'),
+    url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff')
+      format('woff'),
+    url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf')
+      format('truetype');
+}
+/* 티몬소리체 */
 @font-face {
   font-family: 'TmonMonsori';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff')
+    format('woff');
   font-weight: normal;
   font-style: normal;
 }
-/* cafe 24 단정해 */
+/* cafe 24 서라운드 */
 @font-face {
-  font-family: 'Cafe24Danjunghae';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Danjunghae.woff') format('woff');
+  font-family: 'Cafe24Ssurround';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff')
+    format('woff');
   font-weight: normal;
   font-style: normal;
 }
-.container{
+.container {
   width: 100%;
   height: 100vh;
   display: flex;
   font-family: 'NanumBarunGothic';
 }
 /* header */
-.header{
+.header {
   width: 300px;
   height: 100%;
   background-color: #000;
@@ -40,210 +47,324 @@ body{
   /* position: fixed;
   z-index: 3; */
 }
-.header_main{
+.header_main {
   width: 250px;
-  height: 600px;  
+  height: 600px;
   margin: 16px;
 }
 /* 증명사진 */
-.id_photo{
+.id_photo {
   width: 100px;
   height: 120px;
   background-color: lightcoral;
-  margin: 0px auto; 
+  margin: 0px auto;
   border-radius: 5px;
   /* 증명사진 내리고 싶은데 어케 내릴지 생각! */
 }
 /* header a tag */
-@font-face {
-  font-family: 'Cafe24Ssurround';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-.a_tag{
+.a_tag {
   height: 50px;
   display: flex;
   justify-content: space-around;
-  
 }
-.a_tag a{
+.a_tag a {
   color: #fff;
   text-decoration: none;
   font-family: 'Cafe24Ssurround';
 }
-
-.a_url{
+.a_url {
   width: 45px;
   height: 45px;
   border-radius: 100%;
   margin: 2px;
   position: relative;
 }
-.a_url i{
+.a_url i {
   position: absolute;
   left: 8px;
   top: 8px;
   font-size: 30px;
 }
-.a_url:hover{
-  background-color: #5D5D5D;
+.a_url i:hover {
+  color: #5d5d5d;
 }
 /* 헤더 메뉴 */
-.header_menu{
+.header_menu {
   height: 340px;
   margin-top: 10px;
 }
 .header_menu a {
   color: #fff;
   text-decoration: none;
-  font-weight: 800; 
+  font-weight: 800;
 }
-.header_menu a:hover{
-  color: #BDBDBD;
+.header_menu a:hover {
+  color: #bdbdbd;
 }
-.h_menu{
+.h_menu {
   height: 56px;
   font-size: 20px;
   padding: 5px 0 0 5px;
   display: flex;
 }
 /* main */
-.main{
+.main {
   width: 85%;
   height: 100%;
 }
 /* main 이미지 */
-.main_top{
+.main_top {
   width: 100%;
   height: 100vh;
-  background-image: url(../image/codingimg.png); 
+  background-image: url(../image/codingimg.png);
   background-size: cover;
   position: relative;
 }
-.main_top_wrap{
+.main_top_wrap {
   position: absolute;
-  left:20%;
+  left: 20%;
   top: 50%;
 }
-.main_top_write{
+.main_top_write {
   font-weight: 800;
   font-size: 50px;
   color: #fff;
 }
 /* main 글 */
-.main_bottom{
+.main_bottom {
   width: 100%;
   /* height: 100%; */
 }
-.main_bottom_wrap{
+.main_bottom_wrap {
   width: 100%;
 }
-.m_menu{
+.m_menu {
   width: 1200px;
   margin: 0 auto;
 }
 /* about css 시작 */
-.about{
+.about {
   height: 450px;
   background-color: lightsalmon;
 }
 
 /* 메인 메뉴 타이틀 제목 */
-.menu_title{
+.menu_title {
   width: 300px;
   height: 50px;
-  margin-left:10px;
+  margin-left: 10px;
   padding: 10px;
   font-size: 50px;
   font-weight: 800;
   font-family: 'TmonMonsori';
   border-bottom: 3px outset black;
 }
-.about_bottom{
+.about_bottom {
   width: 1200px;
   height: 350px;
   display: flex;
 }
-.about_bottom_photo{
+.about_bottom_photo {
   width: 300px;
   margin: 20px;
   background-color: lightsteelblue;
 }
-.about_bottom_side{
+.about_bottom_side {
   background-color: lightcyan;
   width: 700px;
   margin: 20px 20px 20px 0;
   padding: 10px;
 }
-.about_bottom_title{
+.about_bottom_title {
   font-size: 30px;
-  font-family: 'Cafe24Danjunghae';
+  font-weight: 800;
 }
 /* resume css 시작 */
-.resume{
+.resume {
   background-color: lightslategray;
   height: 600px;
 }
-.resume_bottom{
+.resume_bottom {
   width: 1100px;
   height: 500px;
   display: flex;
   justify-content: space-around;
 }
 /* 학력사항 시작 */
-.resume_education{
+.resume_education {
   background-color: lightgreen;
   width: 500px;
   padding: 10px;
   margin: 15px;
 }
 /* 이력서 소제목 타이틀 */
-.resume_title{
+.resume_title {
   font-size: 30px;
-  font-family: 'Cafe24Danjunghae';
+  font-weight: 800;
 }
-.resume_education_school{
+.resume_education_school {
   border-left: 2px solid black;
   font-size: 15px;
+  position: relative;
+  padding: 10px;
 }
-
+.resume_education_school i {
+  position: absolute;
+  left: -8px;
+}
 /* 대외활동 */
-.resume_activies{
+.resume_activies {
   background-color: lightsteelblue;
   width: 500px;
   margin: 15px 15px 15px 0;
   padding: 10px;
 }
 /* portfolio css 시작 */
-.portfolio{
+.portfolio {
   background-color: #f5f8fd;
   height: 800px;
   padding: 10px;
 }
-.portfolio_bottom{
+.portfolio_bottom {
   height: 400px;
   display: flex;
   justify-content: space-around;
 }
-.portfolio_db{
-  background-color: lightpink;
-  width: 600px; 
+/* 디비 프로젝트 */
+.portfolio_db {
+  width: 600px;
   height: 600px;
   margin: 20px;
   padding: 10px;
 }
-.portfolio_deajeon{
-  background-color: lightseagreen;
+.portfolio_image {
+  background-color: lightsteelblue;
+  width: 400px;
+  height: 200px;
+  margin: 0 auto;
+}
+.portfolio_image img {
+  width: 400px;
+  height: 200px;
+}
+.portfolio_descrption {
+  font-size: 15px;
+}
+/* 대전에서 여행하슈 프로젝트 */
+.portfolio_deajeon {
   width: 600px;
   height: 600px;
   padding: 10px;
   margin: 20px 20px 20px 0;
 }
+
 /* skill css 시작 */
-.skill{
-  background-color: lightgreen;
+.skill {
+  width: 1200px;
+  height: 570px;
 }
-.contact{
-  background-color: lightblue;
+.skill_table_wrap {
+  width: 1100px;
+  height: 500px;
+  margin: 10px 0 10px 30px;
+}
+.skill_table {
+  width: 1100px;
+  height: 250px;
+  display: flex;
+}
+.skill_table_lfb {
+  width: 300px;
+  display: flex;
+  padding: 10px;
+}
+.skill_table_lfb_icon {
+  background-color: #000;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: relative;
+  margin-top: 5px;
+}
+.skill_table_lfb_icon i {
+  position: absolute;
+  font-size: 25px;
+  left: 7px;
+  top: 8px;
+  color: #fff;
+}
+.skill_table_lfb_icon:hover {
+  background-color: #fff;
+  border: 1px solid black;
+}
+.skill_table_lfb_icon i:hover {
+  color: #000;
+}
+.skill_table_lfb_description {
+  margin-left: 10px;
+  width: 260px;
+}
+.skill_table_lfb_top {
+  font-size: 25px;
+  font-weight: 800;
+  padding-top: 10px;
+}
+.skill_table_lfb_bottom {
+  padding-top: 10px;
+}
+/* contact css 시작 */
+.contact {
+  width: 1200px;
+  height: 750px;
+}
+.contact_description {
+  width: 1100px;
+  height: 700px;
+  margin: 10px;
+}
+.contact_top {
+  width: 1000px;
+  height: 150px;
+  padding: 10px;
+}
+.contact_bottom {
+  background-color: lightyellow;
+  width: 1000px;
+  height: 410px;
+  margin: 0 auto;
+  box-shadow: 10px 10px 10px #5d5d5d;
+  border-radius: 10px;
+}
+.contact_lepg {
+  width: 980px;
+  height: 60px;
+  display: flex;
+  padding: 10px;
+}
+
+.contact_lepg_icon {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 100%;
+  margin-top: 10px;
+  position: relative;
+}
+.contact_lepg_icon i {
+  color: #fff;
+  position: absolute;
+  font-size: 20px;
+  left: 10px;
+  top: 10px;
+}
+.contact_lepg_desciption {
+  height: 100px;
+}
+.contact_lepg_desciption p {
+  font-size: 15px;
+  margin-left: 10px;
+}
+.contact_lepg_desciption p a {
+  color: #000;
+  text-decoration: none;
 }
