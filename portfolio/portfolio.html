@@ -6,15 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>신입 개발자 변수정 포트폴리오입니다.</title>
   <link rel="stylesheet" href="portfolio.css">
-  <!-- CSS only -->
+    <link rel="icon" href="../image/s.png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 <body>
-  <div class="container">
-    <!-- header -->
+   <!-- header -->
     <div class="header">
       <div class="header_main">
-        <div class="id_photo">증명사진</div>
+        <div class="id_photo"></div>
+        <div class="header_name">
+        Byun Su Jeong
+        </div>
         <div class="a_tag">
           <a href="https://github.com/sjsjsjsue"><div class="a_url"><i class="bi bi-github"></i></div></a>
           <a href="https://modixcode.blogspot.com/"><div class="a_url"><i class="bi bi-google"></i></div></a>
@@ -30,22 +32,25 @@
         </div>
       </div>
     </div>
+  <div class="container">
+   
     <!-- main -->
     <div class="main">
       <div class="main_top">
         <div class="main_top_wrap" id="main_top_wrap">
-          <div class="main_top_write">Hi, I'm Sue</div>
+          <div class="main_top_write">Hi, I'm Sue.</div>
           <div class="main_top_write">안녕하세요, 신입 개발자 변수정입니다.</div>
         </div>
       </div>
       <div class="main_bottom">
         <div class="main_bottom_wrap">
+          <!-- about me -->
           <div class="m_menu about" id="about">
             <div class="menu_title">About Me</div>
             <div class="about_bottom">
-              <div class="about_bottom_photo">photo</div>
+              <div class="about_bottom_photo"></div>
               <div class="about_bottom_side">
-                <div class="about_bottom_title">Web Developer</div>
+                <div class="bottom_title">Web Developer</div>
                 <div class="about_bottom_introduction">
                   <p>sf</p>
                   <p>sdfsd</p>
@@ -60,39 +65,94 @@
               </div>
             </div>
           </div>
+          <!-- 이력서 -->
           <div class="m_menu resume" id="resume">
             <div class="menu_title">Resume</div>
             <div class="resume_bottom">
-              <div class="resume_education">
-                <div class="resume_title">Education</div>
-                <div class="resume_education_discription">
-                  <div class="resume_education_school highschool">
-                    <i class="bi bi-circle-fill"></i>
-                    <p><h2>고등학교</h2></p> 
-                    <p><mark style="background-color: #e4edf9;">2012년도 졸업</mark></p>
+              <div class="resume_bottom_education">
+                <div class="bottom_title">Education</div>
+                <div class="resume_bottom_description">
+                  <div class="resume_bottom_education_highschool">
+                    <div class="resume_bottom_icon"><i class="bi bi-circle-fill"></i></div>
+                    <div class="resume_bottom_education_highuni_description">
+                      <div class="resume_bottom_education_description_title">00 고등학교</div>
+                      <div class="resume_bottom_education_description_sub">
+                        <p>0000 ~ 0000 </p>
+                        <p>인문계 00고등학교 졸업</p>
+                      </div>
+                    </div>
                   </div>
-                  <div class="resume_education_school">
-                    <i class="bi bi-circle-fill"></i>
-                    <p><h2>대학교</h2></p>
-                    <p><mark style="background-color: #e4edf9;"> 졸업</mark></p>
-                    <p>◼fdsdf</p>
-                    <p>◼sdfsdfds</p>
+                  <div class="resume_bottom_education_university">
+                    <div class="resume_bottom_icon"><i class="bi bi-circle-fill"></i></div>
+                    <div class="resume_bottom_education_highuni_description">
+                      <div class="resume_bottom_education_description_title">00 대학교</div>
+                      <div class="resume_bottom_education_description_sub">
+                        <p>0000 ~ 0000 </p>
+                        <p>00학과 졸업</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="resume_activies">
-                <div class="resume_title">External activities</div>
-                <div></div>
+              <div class="resume_bottom_external">
+                <div class="bottom_title">External activities</div>
+                <div class="resume_bottom_external_description">
+                  <div class="resume_bottom_education_highschool">
+                    <div class="resume_bottom_icon"><i class="bi bi-circle-fill"></i></div>
+                    <div class="resume_bottom_education_highuni_description">
+                      <div class="resume_bottom_education_description_title">DW 아카데미</div>
+                      <div class="resume_bottom_education_description_academy">
+                        <p>2022.08 ~ 2023.02 </p>
+                        <p>기업주도형 드론을 활용한 임베디드 융합 개발 전문가 양성과정 수료</p>
+                        <ul>
+                          <li>주로 웹 프로그래밍에 필요한 Front End 기술에는 html,css,JavaScript(jquery)
+                            등 을 배웠으며 Back End 기술에는 Java,Jsp,Spring Framwork 등 을 배웠습니다.
+                            그리고 데이터베이스로 Mysql를 사용하였습니다.
+                          </li>
+                          <li>
+                           <strong>Language </strong> <br>
+                            - <img src="https://img.shields.io/badge/Java-007396?style=flat&logo=Java&logoColor=white"/> :
+                            <img src="https://img.shields.io/badge/객체지향설계-000?style=flat-square&logo=객체지향설계&logoColor=white"/>,
+                              <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat-square&logo=Spring Boot&logoColor=white"/>, 
+                              <img src="https://img.shields.io/badge/MyBatis-1B1716?style=flat-square&logo=MyBatis&logoColor=white"/>,
+                              <img src="https://img.shields.io/badge/JPA-3C9B43?style=flat-square&logo=JPA&logoColor=white"/>,
+                               <img src="https://img.shields.io/badge/API-000?style=flat-square&logo=API&logoColor=white"/> 
+                              <br>
+                            - <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=Python&logoColor=white"/> <br>
+                            - <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=Javascript&logoColor=white"/> : 
+                              <img src="https://img.shields.io/badge/jQuery-0769AD?style=flat-square&logo=jQuery&logoColor=white"/>, 
+                              <img src="https://img.shields.io/badge/Ajax-000?style=flat-square&logo=Ajax&logoColor=white"/>
+                               <br>
+                            - <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/>: 
+                             <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=Bootstrap&logoColor=white"/> <br>
+                          </li>
+                          <li>
+                           <strong>Database :</strong>  
+                            <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white"/>
+                          </li>
+                          <li>
+                            <strong>Tool </strong> <br>
+                              <img src="https://img.shields.io/badge/Visual Studio-5C2D91?style=flat-square&logo=Visual Studio&logoColor=white"/>, 
+                              <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=flat-square&logo=Visual Studio Code&logoColor=white"/><br>
+                              <img src="https://img.shields.io/badge/Eclipse IDE-2C2255?style=flat-square&logo=Eclipse IDE&logoColor=white"/>,
+                              <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/><br>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <!-- 포트폴리오 -->
           <div class="m_menu portfolio" id="portfolio">
             <div class="menu_title">PORTFOLIO</div>
             <div class="portfolio_desciption"><h2>이미지 클릭 시 PPT 사이트로 넘어갑니다.</h2></div>
             <div class="portfolio_bottom">
               <div class="portfolio_db">
                 <div class="portfolio_image">
-                 <a href="https://drive.google.com/file/d/1RclwQltJhEIgSpP5TM-FGO2ZK0pMdRFu/view?usp=share_link"><img src="../image/deajeon_reserve.png" alt=""></a>
+                 <a href="../ppt/deajeon_health.pdf"><img src="../image/deajeon_reserve.png" alt=""></a>
                 </div>
                 <div class="portfolio_descrption">
                   <p><strong>◼ 주제 :</strong> 대전시 보건소 예약관리 시스템</p>
@@ -116,7 +176,7 @@
               </div>
               <div class="portfolio_deajeon">
                 <div class="portfolio_image">
-                  <a href="https://drive.google.com/file/d/1XZGS9rnGCzInVm5zFJ4PHVWIYcpjtWUz/view?usp=share_link"><img src="../image/deajon_travel.jpg" alt=""></a>
+                  <a href="../ppt/deajeon_travel.pdf"><img src="../image/deajon_travel.jpg" alt=""></a>
                 </div>
                 <div class="portfolio_descrption">
                   <p><strong>◼ 주제 :</strong> 사람들에게 대전의 맛집과 여행을 알려주자!</p>
@@ -143,13 +203,16 @@
               </div>
             </div>
           </div>
+          <!-- 스킬 -->
           <div class="m_menu skill" id="skill">
             <div class="menu_title">Skill</div>
             <div class="skill_table_wrap">
               <div class="skill_table">
                 <div class="skill_table_lfb">
-                  <div class="skill_table_lfb_icon">
-                    <i class="bi bi-laptop"></i>
+                  <div class="skill_table_lfb_icon_wrap">
+                    <div class="skill_table_lfb_icon">
+                      <i class="bi bi-laptop"></i>
+                    </div>
                   </div>
                   <div class="skill_table_lfb_description">
                     <div class="skill_table_lfb_top">Language</div>
@@ -161,13 +224,15 @@
                   </div>
                 </div>
                 <div class="skill_table_lfb front">
-                   <div class="skill_table_lfb_icon">
-                    <i class="bi bi-front"></i>
+                  <div class="skill_table_lfb_icon_wrap">
+                    <div class="skill_table_lfb_icon">
+                     <i class="bi bi-front"></i>
+                   </div>
                   </div>
                   <div class="skill_table_lfb_description">
                     <div class="skill_table_lfb_top">Front end</div>
                     <div class="skill_table_lfb_bottom">
-                     <img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=HTML5&logoColor=white"/><br>
+                      <img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=HTML5&logoColor=white"/><br>
                       <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/><br>
                       <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=Javascript&logoColor=white"/><br>
                       <img src="https://img.shields.io/badge/jQuery-0769AD?style=flat-square&logo=jQuery&logoColor=white"/><br>
@@ -176,13 +241,16 @@
                   </div>
                 </div>
                 <div class="skill_table_lfb back">
-                  <div class="skill_table_lfb_icon">
-                    <i class="bi bi-back"></i>
+                  <div class="skill_table_lfb_icon_wrap">
+                    <div class="skill_table_lfb_icon">
+                      <i class="bi bi-back"></i>
+                    </div>
                   </div>
                   <div class="skill_table_lfb_description">
                     <div class="skill_table_lfb_top">Back end</div>
                     <div class="skill_table_lfb_bottom">
-                     <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat-square&logo=Spring Boot&logoColor=white"/><br>
+                      <img src="https://img.shields.io/badge/Java-007396?style=flat&logo=Java&logoColor=white"/><br>
+                      <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat-square&logo=Spring Boot&logoColor=white"/><br>
                       <img src="https://img.shields.io/badge/MyBatis-1B1716?style=flat-square&logo=MyBatis&logoColor=white"/><br>
                       <img src="https://img.shields.io/badge/JPA-3C9B43?style=flat-square&logo=JPA&logoColor=white"/><br>
                     </div>
@@ -191,8 +259,10 @@
               </div>
               <div class="skill_table skill_table_bottom">
                 <div class="skill_table_lfb">
-                  <div class="skill_table_lfb_icon">
-                    <i class="bi bi-clipboard-data-fill"></i>
+                  <div class="skill_table_lfb_icon_wrap">
+                    <div class="skill_table_lfb_icon">
+                      <i class="bi bi-clipboard-data-fill"></i>
+                    </div>
                   </div>
                   <div class="skill_table_lfb_description database">
                     <div class="skill_table_lfb_top ">Database</div>
@@ -202,8 +272,10 @@
                   </div>
                 </div>
                 <div class="skill_table_lfb front">
-                   <div class="skill_table_lfb_icon">
-                    <i class="bi bi-cloud"></i>
+                  <div class="skill_table_lfb_icon_wrap">
+                    <div class="skill_table_lfb_icon">
+                     <i class="bi bi-cloud"></i>
+                   </div>
                   </div>
                   <div class="skill_table_lfb_description">
                     <div class="skill_table_lfb_top cloud">Cloud</div>
@@ -213,8 +285,10 @@
                   </div>
                 </div>
                 <div class="skill_table_lfb back">
-                  <div class="skill_table_lfb_icon">
-                    <i class="bi bi-gear"></i>
+                  <div class="skill_table_lfb_icon_wrap">
+                    <div class="skill_table_lfb_icon">
+                      <i class="bi bi-gear"></i>
+                    </div>
                   </div>
                   <div class="skill_table_lfb_description">
                     <div class="skill_table_lfb_top tool">Tool</div>
@@ -229,6 +303,7 @@
               </div>
             </div>
           </div>
+          <!-- contact -->
           <div class="m_menu contact" id="contact">
             <div class="menu_title">Contanct</div>
             <div class="contact_description">
@@ -238,8 +313,10 @@
               </div>
               <div class="contact_bottom">
                 <div class="contact_lepg">
-                  <div class="contact_lepg_icon">
-                    <i class="bi bi-geo-alt"></i>
+                  <div class="contact_lepg_icon_wrap">
+                    <div class="contact_lepg_icon">
+                      <i class="bi bi-geo-alt"></i>
+                    </div>
                   </div>
                   <div class="contact_lepg_desciption">
                     <p><strong> Location : </strong> <br>
@@ -247,17 +324,21 @@
                   </div>
                 </div>
                    <div class="contact_lepg">
-                  <div class="contact_lepg_icon">
-                    <i class="bi bi-envelope"></i>
-                  </div>
+                    <div class="contact_lepg_icon_wrap">
+                      <div class="contact_lepg_icon">
+                        <i class="bi bi-envelope"></i>
+                      </div>
+                    </div>
                   <div class="contact_lepg_desciption">
                     <p><strong> Email : </strong> <br>
                     93sujeong12@gmail.com</p>
                   </div>
                 </div>
                 <div class="contact_lepg">
+                  <div class="contact_lepg_icon_wrap">
                     <div class="contact_lepg_icon">
                     <i class="bi bi-telephone"></i>
+                  </div>
                   </div>
                   <div class="contact_lepg_desciption">
                     <p><strong> Phone Number : </strong> <br>
@@ -265,8 +346,10 @@
                   </div>
                 </div>
                 <div class="contact_lepg contact_git">
+                  <div class="contact_lepg_icon_wrap">
                     <div class="contact_lepg_icon">
                     <i class="bi bi-telephone"></i>
+                  </div>
                   </div>
                   <div class="contact_lepg_desciption">
                     <p><strong> Git : </strong> <br>
@@ -274,8 +357,10 @@
                   </div>
                 </div>
                 <div class="contact_lepg contact_git">
+                  <div class="contact_lepg_icon_wrap">
                     <div class="contact_lepg_icon">
                     <i class="bi bi-google"></i>
+                  </div>
                   </div>
                   <div class="contact_lepg_desciption">
                     <p><strong> Blog : </strong> <br>

@@ -44,22 +44,29 @@ body {
   height: 100%;
   background-color: #000;
   color: #fff;
-  /* position: fixed;
-  z-index: 3; */
+  position: fixed;
+  z-index: 3;
 }
 .header_main {
   width: 250px;
-  height: 600px;
+  height: 700px;
   margin: 16px;
 }
 /* 증명사진 */
 .id_photo {
   width: 100px;
   height: 120px;
-  background-color: lightcoral;
+  background-image: url(../image/짱구.jpg);
+  background-size: cover;
   margin: 0px auto;
-  border-radius: 5px;
-  /* 증명사진 내리고 싶은데 어케 내릴지 생각! */
+  border-radius: 10px;
+}
+.header_name {
+  width: 250px;
+  margin: 10px auto;
+  font-size: 29px;
+  font-weight: 800;
+  text-align: center;
 }
 /* header a tag */
 .a_tag {
@@ -109,14 +116,16 @@ body {
 }
 /* main */
 .main {
-  width: 85%;
-  height: 100%;
+  width: 100%;
+  height: 100vh;
 }
 /* main 이미지 */
 .main_top {
   width: 100%;
   height: 100vh;
-  background-image: url(../image/codingimg.png);
+  background-image: linear-gradient(rgba(4, 10, 20, 0.8), rgba(4, 10, 20, 0.8)),
+    url(../image/codingimg.png);
+  /* linear-gradient : 배경이미지 색깔 죽이기 */
   background-size: cover;
   position: relative;
 }
@@ -129,6 +138,7 @@ body {
   font-weight: 800;
   font-size: 50px;
   color: #fff;
+  text-shadow: 2px 2px 2px 2px #5d5d5d;
 }
 /* main 글 */
 .main_bottom {
@@ -145,9 +155,7 @@ body {
 /* about css 시작 */
 .about {
   height: 450px;
-  background-color: lightsalmon;
 }
-
 /* 메인 메뉴 타이틀 제목 */
 .menu_title {
   width: 300px;
@@ -167,61 +175,89 @@ body {
 .about_bottom_photo {
   width: 300px;
   margin: 20px;
-  background-color: lightsteelblue;
+  background-image: url(../image/짱구.jpg);
+  background-size: cover;
+  border-radius: 10px;
 }
 .about_bottom_side {
-  background-color: lightcyan;
+  background-color: lightpink;
   width: 700px;
   margin: 20px 20px 20px 0;
   padding: 10px;
 }
-.about_bottom_title {
+/* 중간 타이틀 */
+.bottom_title {
   font-size: 30px;
   font-weight: 800;
 }
 /* resume css 시작 */
 .resume {
-  background-color: lightslategray;
   height: 600px;
 }
 .resume_bottom {
-  width: 1100px;
+  width: 1000px;
   height: 500px;
   display: flex;
-  justify-content: space-around;
+  background-color: #fff;
+  margin: 10px;
 }
-/* 학력사항 시작 */
-.resume_education {
-  background-color: lightgreen;
-  width: 500px;
+/*학력사항*/
+.resume_bottom_education {
+  width: 350px;
   padding: 10px;
-  margin: 15px;
 }
-/* 이력서 소제목 타이틀 */
-.resume_title {
-  font-size: 30px;
+.resume_bottom_description {
+  width: 350px;
+  height: 420px;
+  margin-top: 10px;
+}
+.resume_bottom_education_highschool {
+  width: 350px;
+  height: 120px;
+  display: flex;
+}
+.resume_bottom_icon {
+  width: 20px;
+  padding: 10px;
+}
+.resume_bottom_icon i {
+  font-size: 13px;
+}
+.resume_bottom_education_highuni_description {
+  width: 300px;
+  padding: 10px;
+}
+.resume_bottom_education_description_title {
+  width: 250px;
+  font-size: 20px;
   font-weight: 800;
 }
-.resume_education_school {
-  border-left: 2px solid black;
-  font-size: 15px;
-  position: relative;
-  padding: 10px;
+.resume_bottom_education_description_sub p:nth-child(1) {
+  background-color: #e4edf9;
+  width: 110px;
 }
-.resume_education_school i {
-  position: absolute;
-  left: -8px;
+.resume_bottom_education_university {
+  width: 350px;
+  height: 300px;
+  display: flex;
 }
 /* 대외활동 */
-.resume_activies {
-  background-color: lightsteelblue;
+.resume_bottom_external {
   width: 500px;
-  margin: 15px 15px 15px 0;
   padding: 10px;
+}
+.resume_bottom_education_description_academy {
+  width: 450px;
+}
+.resume_bottom_education_description_academy p:nth-child(1) {
+  width: 145px;
+  background-color: #e4edf9;
+}
+.resume_bottom_education_description_academy ul li {
+  margin-bottom: 10px;
 }
 /* portfolio css 시작 */
 .portfolio {
-  background-color: #f5f8fd;
   height: 800px;
   padding: 10px;
 }
@@ -269,14 +305,25 @@ body {
   margin: 10px 0 10px 30px;
 }
 .skill_table {
-  width: 1100px;
+  width: 1200px;
   height: 250px;
   display: flex;
+  justify-content: space-between;
 }
 .skill_table_lfb {
   width: 300px;
   display: flex;
   padding: 10px;
+}
+.skill_table_lfb:hover .skill_table_lfb_icon {
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.skill_table_lfb:hover .skill_table_lfb_icon i {
+  color: #000;
+}
+.skill_table_lfb_icon_wrap {
+  width: 45px;
 }
 .skill_table_lfb_icon {
   background-color: #000;
@@ -289,17 +336,11 @@ body {
 .skill_table_lfb_icon i {
   position: absolute;
   font-size: 25px;
-  left: 7px;
+  left: 8px;
   top: 8px;
   color: #fff;
 }
-.skill_table_lfb_icon:hover {
-  background-color: #fff;
-  border: 1px solid black;
-}
-.skill_table_lfb_icon i:hover {
-  color: #000;
-}
+
 .skill_table_lfb_description {
   margin-left: 10px;
   width: 260px;
@@ -341,7 +382,16 @@ body {
   display: flex;
   padding: 10px;
 }
-
+.contact_lepg:hover .contact_lepg_icon i {
+  color: #000;
+}
+.contact_lepg:hover .contact_lepg_icon {
+  background-color: #fff;
+  border: 1px solid black;
+}
+.contact_lepg_icon_wrap {
+  width: 45px;
+}
 .contact_lepg_icon {
   width: 40px;
   height: 40px;
@@ -368,3 +418,11 @@ body {
   color: #000;
   text-decoration: none;
 }
+
+/* 
+가장 작은 디바이스 < 576
+모바일 디바이스 <= 768
+태블릿 디바이스 : 768 < ㅇ<992
+데스크탑 : 992 < <= 1200
+큰 화면 데스크탑 : 1200<
+*/
