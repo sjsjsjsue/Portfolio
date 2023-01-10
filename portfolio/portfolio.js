@@ -13,3 +13,7 @@ function typing() {
 }
 
 setInterval(typing, 300);
+
+function appearHeader() {
+  var header = document.getElementById('header2');
+}
