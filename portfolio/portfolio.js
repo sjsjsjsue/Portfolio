@@ -13,8 +13,3 @@ function typing() {
 }
 
 setInterval(typing, 300);
-
-function doHeader() {
-  document.getElementById('header').style.visibility = 'visibility';
-  document.getElementById('main_top_i').style.visibility = hidden;
-}

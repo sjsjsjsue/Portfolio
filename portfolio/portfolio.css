@@ -128,13 +128,7 @@ body {
   background-size: cover;
   position: relative;
 }
-.main_top i {
-  color: #fff;
-  position: absolute;
-  visibility: hidden;
-  font-size: 40px;
-  cursor: pointer;
-}
+
 .main_top_wrap {
   position: absolute;
   left: 20%;
@@ -450,7 +444,7 @@ body {
   /* main max 1200 */
   .main_top {
     position: relative;
-    width: 112%;
+    /* width: 112%; */
   }
   .main_top_wrap {
     position: absolute;
@@ -529,31 +523,49 @@ body {
 
 @media all and (max-width: 992px) {
   .header {
-    visibility: hidden;
-    z-index: 3;
+    display: none;
   }
   .main_top {
     position: relative;
-    width: 130%;
-  }
-  .main_top i {
-    visibility: visible;
-    position: absolute;
-    right: 1%;
-    top: 1%;
   }
   .main_top_wrap {
     position: absolute;
-    font-size: 150%;
     top: 40%;
     left: 20%;
   }
+  .main_bottom_wrap {
+    margin: 0;
+    width: 100%;
+  }
   .m_menu {
-    width: 125%;
-    margin: 0%;
+    width: 74%;
+    margin-left: 13%;
+  }
+  .menu_title {
+    font-size: 190%;
+    width: 23%;
+    height: 8%;
+    margin-left: 1%;
+    padding: 1%;
   }
   /* about */
+  .about_bottom {
+    width: 100%;
+  }
+  .about_bottom_photo {
+    width: 40%;
+  }
+  .about_bottom_side {
+    width: 60%;
+    font-size: 80%;
+  }
   /* resume */
+  .resume_bottom {
+    font-size: 70%;
+  }
+  .bottom_title {
+    font-size: 200%;
+  }
   .resume_bottom_external {
     width: 67%;
   }
@@ -562,7 +574,29 @@ body {
     height: 10%;
   }
   .resume_bottom_education_description_academy {
-    width: 220%;
+    width: 130%;
+  }
+  /* portfolio */
+  .portfolio_title {
+    height: 4%;
+  }
+  .portfolio_db {
+    width: 50%;
+  }
+  .portfolio_image {
+    width: 80%;
+    height: 40%;
+    margin: 0;
+  }
+  .portfolio_image img {
+    width: 100%;
+    height: 80%;
+  }
+  .portfolio_descrption {
+    font-size: 80%;
+  }
+  .portfolio_deajeon {
+    width: 50%;
   }
   /* skill */
   .skill_table {
@@ -572,34 +606,89 @@ body {
     width: 80%;
   }
   /* contact */
+  .contact {
+    height: 50%;
+  }
+  .contact_top {
+    font-size: 80%;
+  }
   .contact_bottom {
-    width: 95%;
+    width: 60%;
   }
 }
 @media all and (max-width: 768px) {
   .main_top {
     position: relative;
-    width: 154%;
   }
-  .m_menu {
-    width: 150%;
+  .main_top_wrap {
+    position: absolute;
+    font-size: 70%;
   }
+  .menu_title {
+    font-size: 165%;
+    margin-left: 4%;
+  }
+  /* about */
+  .about_bottom_side {
+    font-size: 70%;
+  }
+  /* resume */
+  .resume {
+    height: 80%;
+  }
+  .bottom_title {
+    font-size: 170%;
+  }
+  .resume_bottom_education_description_title {
+    width: 50%;
+    font-size: 150%;
+  }
+  .resume_bottom_external {
+    width: 60%;
+  }
+  .resume_bottom_education_description_academy {
+    width: 80%;
+    font-size: 30%;
+  }
+  .resume_bottom_education_description_academy ul {
+    font-size: 2%;
+  }
+  /* skill */
   .skill {
     height: 150%;
   }
   .skill_table_wrap {
     display: flex;
+    height: 80%;
   }
   .skill_table {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 80%;
   }
+  .skill_table_lfb_top {
+    font-size: 100%;
+  }
+  .skill_table_bottom {
+    height: 80%;
+  }
+  /* contact */
   .contact_description {
     width: 98%;
     height: 90%;
   }
+  .contact_top {
+    width: 80%;
+    height: 30%;
+  }
   .contact_bottom {
     width: 90%;
+    margin: 2%;
+  }
+  .contact_lepg {
+    width: 90%;
+  }
+  .contact_lepg_desciption {
+    font-size: 50%;
   }
 }
