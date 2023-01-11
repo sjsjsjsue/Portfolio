@@ -133,6 +133,7 @@ body {
   position: absolute;
   visibility: hidden;
   font-size: 40px;
+  cursor: pointer;
 }
 .main_top_wrap {
   position: absolute;
@@ -528,7 +529,8 @@ body {
 
 @media all and (max-width: 992px) {
   .header {
-    display: none;
+    visibility: hidden;
+    z-index: 3;
   }
   .main_top {
     position: relative;
