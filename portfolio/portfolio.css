@@ -666,11 +666,16 @@ body {
     flex-direction: column;
     height: 80%;
   }
+  .skill_table_lfb {
+    width: 90%;
+  }
   .skill_table_lfb_top {
     font-size: 100%;
   }
   .skill_table_bottom {
-    height: 80%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
   }
   /* contact */
   .contact_description {
@@ -678,15 +683,15 @@ body {
     height: 90%;
   }
   .contact_top {
-    width: 80%;
+    width: 90%;
     height: 30%;
   }
   .contact_bottom {
-    width: 90%;
+    width: 95%;
     margin: 2%;
   }
   .contact_lepg {
-    width: 90%;
+    width: 94%;
   }
   .contact_lepg_desciption {
     font-size: 50%;
