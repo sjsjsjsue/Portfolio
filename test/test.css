@@ -1,0 +1,694 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 나눔 바른 고딕 */
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix')
+      format('embedded-opentype'),
+    url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff')
+      format('woff'),
+    url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf')
+      format('truetype');
+}
+/* 티몬소리체 */
+@font-face {
+  font-family: 'TmonMonsori';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* cafe 24 서라운드 */
+@font-face {
+  font-family: 'Cafe24Ssurround';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  font-family: 'NanumBarunGothic';
+}
+/* header */
+.header {
+  width: 300px;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  z-index: 3;
+}
+.header_main {
+  width: 250px;
+  height: 700px;
+  margin: 16px;
+}
+/* 증명사진 */
+.id_photo {
+  width: 100px;
+  height: 120px;
+  background-image: url(../image/짱구.jpg);
+  background-size: cover;
+  margin: 0px auto;
+  border-radius: 10px;
+}
+.header_name {
+  width: 250px;
+  margin: 10px auto;
+  font-size: 29px;
+  font-weight: 800;
+  text-align: center;
+}
+/* header a tag */
+.a_tag {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.a_tag a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Cafe24Ssurround';
+}
+.a_url {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  margin: 2px;
+  position: relative;
+}
+.a_url i {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  font-size: 30px;
+}
+.a_url i:hover {
+  color: #5d5d5d;
+}
+/* 헤더 메뉴 */
+.header_menu {
+  height: 340px;
+  margin-top: 10px;
+}
+.header_menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+}
+.header_menu a:hover {
+  color: #bdbdbd;
+}
+.h_menu {
+  height: 56px;
+  font-size: 20px;
+  padding: 5px 0 0 5px;
+  display: flex;
+}
+/* main */
+.main {
+  width: 100%;
+  height: 100vh;
+}
+/* main 이미지 */
+.main_top {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(4, 10, 20, 0.8), rgba(4, 10, 20, 0.8)),
+    url(../image/codingimg.png);
+  /* linear-gradient : 배경이미지 색깔 죽이기 */
+  background-size: cover;
+  position: relative;
+}
+
+.main_top_wrap {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+}
+.main_top_write {
+  font-weight: 800;
+  font-size: 50px;
+  color: #fff;
+  text-shadow: 2px 2px 2px 2px #5d5d5d;
+}
+/* main 글 */
+.main_bottom {
+  width: 100%;
+  /* height: 100%; */
+}
+.main_bottom_wrap {
+  width: 100%;
+}
+.m_menu {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* about css 시작 */
+.about {
+  height: 450px;
+}
+/* 메인 메뉴 타이틀 제목 */
+.menu_title {
+  width: 300px;
+  height: 50px;
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 50px;
+  font-weight: 800;
+  font-family: 'TmonMonsori';
+  border-bottom: 3px outset black;
+}
+.about_bottom {
+  width: 1200px;
+  height: 350px;
+  display: flex;
+}
+.about_bottom_photo {
+  width: 300px;
+  margin: 20px;
+  background-image: url(../image/짱구.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+.about_bottom_side {
+  background-color: lightpink;
+  width: 700px;
+  margin: 20px 20px 20px 0;
+  padding: 10px;
+}
+/* 중간 타이틀 */
+.bottom_title {
+  font-size: 30px;
+  font-weight: 800;
+}
+/* resume css 시작 */
+.resume {
+  height: 600px;
+}
+.resume_bottom {
+  width: 1000px;
+  height: 500px;
+  display: flex;
+  margin: 10px;
+}
+/*학력사항*/
+.resume_bottom_education {
+  width: 350px;
+  padding: 10px;
+}
+.resume_bottom_description {
+  width: 350px;
+  height: 420px;
+  margin-top: 10px;
+}
+.resume_bottom_education_highschool {
+  width: 350px;
+  height: 120px;
+  display: flex;
+}
+.resume_bottom_icon {
+  width: 20px;
+  padding: 10px;
+}
+.resume_bottom_icon i {
+  font-size: 13px;
+}
+.resume_bottom_education_highuni_description {
+  width: 300px;
+  padding: 10px;
+}
+.resume_bottom_education_description_title {
+  width: 250px;
+  font-size: 20px;
+  font-weight: 800;
+}
+.resume_bottom_education_description_sub p:nth-child(1) {
+  background-color: #e4edf9;
+  width: 110px;
+}
+.resume_bottom_education_university {
+  width: 350px;
+  height: 300px;
+  display: flex;
+}
+/* 대외활동 */
+.resume_bottom_external {
+  width: 600px;
+  padding: 10px;
+}
+.resume_bottom_education_description_academy {
+  width: 550px;
+}
+.resume_bottom_education_description_academy p:nth-child(1) {
+  width: 145px;
+  background-color: #e4edf9;
+}
+.resume_bottom_education_description_academy ul li {
+  margin-bottom: 10px;
+}
+/* portfolio css 시작 */
+.portfolio {
+  height: 800px;
+}
+.portfolio_desciption {
+  width: 800px;
+  margin-left: 10px;
+}
+.portfolio_bottom {
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+/* 디비 프로젝트 */
+.portfolio_db {
+  width: 600px;
+  height: 600px;
+  margin: 20px;
+  padding: 10px;
+}
+.portfolio_image {
+  width: 400px;
+  height: 250px;
+  margin: 0 auto;
+}
+.portfolio_image img {
+  width: 400px;
+  height: 250px;
+}
+.portfolio_descrption {
+  font-size: 15px;
+}
+/* 대전에서 여행하슈 프로젝트 */
+.portfolio_deajeon {
+  width: 600px;
+  height: 600px;
+  padding: 10px;
+  margin: 20px 20px 20px 0;
+}
+
+/* skill css 시작 */
+.skill {
+  width: 1200px;
+  height: 570px;
+}
+.skill_table_wrap {
+  width: 1100px;
+  height: 500px;
+  margin: 10px 0 10px 30px;
+}
+.skill_table {
+  width: 1200px;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+.skill_table_lfb {
+  width: 300px;
+  display: flex;
+  padding: 10px;
+}
+.skill_table_lfb:hover .skill_table_lfb_icon {
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.skill_table_lfb:hover .skill_table_lfb_icon i {
+  color: #000;
+}
+.skill_table_lfb_icon_wrap {
+  width: 45px;
+}
+.skill_table_lfb_icon {
+  background-color: #000;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: relative;
+  margin-top: 5px;
+}
+.skill_table_lfb_icon i {
+  position: absolute;
+  font-size: 25px;
+  left: 8px;
+  top: 8px;
+  color: #fff;
+}
+
+.skill_table_lfb_description {
+  margin-left: 10px;
+  width: 260px;
+}
+.skill_table_lfb_top {
+  font-size: 25px;
+  font-weight: 800;
+  padding-top: 10px;
+}
+.skill_table_lfb_bottom {
+  padding-top: 10px;
+}
+/* contact css 시작 */
+.contact {
+  width: 1200px;
+  height: 750px;
+}
+.contact_description {
+  width: 1100px;
+  height: 700px;
+  margin: 10px;
+}
+.contact_top {
+  width: 1000px;
+  height: 150px;
+  padding: 10px;
+}
+.contact_bottom {
+  background-color: lightyellow;
+  width: 1000px;
+  height: 410px;
+  margin: 0 auto;
+  box-shadow: 10px 10px 10px #5d5d5d;
+  border-radius: 10px;
+}
+.contact_lepg {
+  width: 600px;
+  height: 60px;
+  display: flex;
+  padding: 10px;
+}
+.contact_lepg:hover .contact_lepg_icon i {
+  color: #000;
+}
+.contact_lepg:hover .contact_lepg_icon {
+  background-color: #fff;
+  border: 1px solid black;
+}
+.contact_lepg_icon_wrap {
+  width: 45px;
+}
+.contact_lepg_icon {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 100%;
+  margin-top: 10px;
+  position: relative;
+}
+.contact_lepg_icon i {
+  color: #fff;
+  position: absolute;
+  font-size: 20px;
+  left: 10px;
+  top: 10px;
+}
+.contact_lepg_desciption {
+  height: 100px;
+}
+.contact_lepg_desciption p {
+  font-size: 15px;
+  margin-left: 10px;
+}
+.contact_lepg_desciption p a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* 
+모바일 디바이스 <= 768
+태블릿 디바이스 : 768 < ㅇ<992
+데스크탑 : 992 < <= 1200
+*/
+/* 반응형 */
+@media all and (max-width: 1200px) {
+  .header {
+    width: 15%;
+  }
+  .header_main {
+    width: 80%;
+    margin-top: 35%;
+  }
+  .header_name {
+    width: 100%;
+    font-size: 105%;
+  }
+  .h_menu {
+    font-size: 120%;
+  }
+  /* main max 1200 */
+  .main_top {
+    position: relative;
+    /* width: 112%; */
+  }
+  .main_top_wrap {
+    position: absolute;
+    left: 25%;
+  }
+  .main_top_write {
+    font-size: 200%;
+  }
+  .main_bottom_wrap {
+    margin-left: 10%;
+    width: 90%;
+  }
+  .m_menu {
+    margin-left: 10%;
+    width: 90%;
+  }
+  /* about */
+  .about_bottom {
+    width: 97%;
+  }
+  .about_bottom_photo {
+    width: 30%;
+  }
+  .about_bottom_side {
+    width: 70%;
+  }
+  /* resume */
+  .resume {
+    height: 200%;
+  }
+  .resume_bottom {
+    width: 98%;
+  }
+  .resume_bottom_education {
+    width: 30%;
+  }
+  .resume_bottom_education_highuni_description {
+    width: 100%;
+  }
+  .resume_bottom_external {
+    width: 60%;
+  }
+  .resume_dwacademy {
+    width: 50%;
+    height: 20%;
+  }
+  .resume_bottom_education_description_academy {
+    width: 200%;
+  }
+  /* portfolio */
+  .portfolio_bottom {
+    height: 80%;
+  }
+  /* skill */
+  .skill {
+    height: 120%;
+  }
+  .skill_table_wrap {
+    width: 95%;
+  }
+  .skill_table_lfb {
+    width: 45%;
+  }
+  .skill_table {
+    width: 70%;
+  }
+  /* contact 1200 */
+  .contact_top {
+    width: 70%;
+  }
+  .contact_bottom {
+    width: 80%;
+    margin: 0;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .header {
+    display: none;
+  }
+  .main_top {
+    position: relative;
+  }
+  .main_top_wrap {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+  }
+  .main_bottom_wrap {
+    margin: 0;
+    width: 100%;
+  }
+  .m_menu {
+    width: 74%;
+    margin-left: 13%;
+  }
+  .menu_title {
+    font-size: 190%;
+    width: 23%;
+    height: 8%;
+    margin-left: 1%;
+    padding: 1%;
+  }
+  /* about */
+  .about_bottom {
+    width: 100%;
+  }
+  .about_bottom_photo {
+    width: 40%;
+  }
+  .about_bottom_side {
+    width: 60%;
+    font-size: 80%;
+  }
+  /* resume */
+  .resume_bottom {
+    font-size: 70%;
+  }
+  .bottom_title {
+    font-size: 200%;
+  }
+  .resume_bottom_external {
+    width: 67%;
+  }
+  .resume_dwacademy {
+    width: 50%;
+    height: 10%;
+  }
+  .resume_bottom_education_description_academy {
+    width: 130%;
+  }
+  /* portfolio */
+  .portfolio_title {
+    height: 4%;
+  }
+  .portfolio_db {
+    width: 50%;
+  }
+  .portfolio_image {
+    width: 80%;
+    height: 40%;
+    margin: 0;
+  }
+  .portfolio_image img {
+    width: 100%;
+    height: 80%;
+  }
+  .portfolio_descrption {
+    font-size: 80%;
+  }
+  .portfolio_deajeon {
+    width: 50%;
+  }
+  /* skill */
+  .skill_table {
+    width: 100%;
+  }
+  .skill_table_lfb_description {
+    width: 80%;
+  }
+  /* contact */
+  .contact {
+    height: 50%;
+  }
+  .contact_top {
+    font-size: 80%;
+  }
+  .contact_bottom {
+    width: 60%;
+  }
+}
+@media all and (max-width: 768px) {
+  .main_top {
+    position: relative;
+  }
+  .main_top_wrap {
+    position: absolute;
+    font-size: 70%;
+  }
+  .menu_title {
+    font-size: 165%;
+    margin-left: 4%;
+  }
+  /* about */
+  .about_bottom_side {
+    font-size: 70%;
+  }
+  /* resume */
+  .resume {
+    height: 80%;
+  }
+  .bottom_title {
+    font-size: 170%;
+  }
+  .resume_bottom_education_description_title {
+    width: 50%;
+    font-size: 150%;
+  }
+  .resume_bottom_external {
+    width: 60%;
+  }
+  .resume_bottom_education_description_academy {
+    width: 80%;
+    font-size: 30%;
+  }
+  .resume_bottom_education_description_academy ul {
+    font-size: 2%;
+  }
+  /* skill */
+  .skill {
+    height: 150%;
+  }
+  .skill_table_wrap {
+    display: flex;
+    height: 80%;
+  }
+  .skill_table {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+  }
+  .skill_table_lfb_top {
+    font-size: 100%;
+  }
+  .skill_table_bottom {
+    height: 80%;
+  }
+  /* contact */
+  .contact_description {
+    width: 98%;
+    height: 90%;
+  }
+  .contact_top {
+    width: 80%;
+    height: 30%;
+  }
+  .contact_bottom {
+    width: 90%;
+    margin: 2%;
+  }
+  .contact_lepg {
+    width: 90%;
+  }
+  .contact_lepg_desciption {
+    font-size: 50%;
+  }
+}
