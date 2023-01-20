@@ -231,9 +231,9 @@ body {
   font-size: 20px;
   font-weight: 800;
 }
-.resume_bottom_education_description_sub p:nth-child(1) {
+.resume_bottom_education_description_sub p:first-child {
   background-color: #e4edf9;
-  width: 110px;
+  width: 75px;
 }
 .resume_bottom_education_university {
   width: 350px;
@@ -249,7 +249,7 @@ body {
   width: 550px;
 }
 .resume_bottom_education_description_academy p:nth-child(1) {
-  width: 145px;
+  width: 100px;
   background-color: #e4edf9;
 }
 .resume_bottom_education_description_academy ul li {
@@ -630,8 +630,11 @@ body {
   .contact_top {
     font-size: 80%;
   }
+  .contact_description {
+    width: 95%;
+  }
   .contact_bottom {
-    width: 60%;
+    width: 95%;
   }
 }
 @media all and (max-width: 768px) {
@@ -642,13 +645,17 @@ body {
     position: absolute;
     font-size: 70%;
   }
+  .m_menu {
+    width: 100%;
+    margin-left: 0%;
+}
   .menu_title {
     font-size: 165%;
     margin-left: 4%;
   }
   /* about */
   .about_bottom_side {
-    font-size: 70%;
+    font-size: 80%;
   }
   /* resume */
   .resume {
@@ -665,11 +672,17 @@ body {
     width: 60%;
   }
   .resume_bottom_education_description_academy {
+    width: 180%;
+  }
+  .resume_bottom_education_description_academy {
     width: 80%;
     font-size: 30%;
   }
   .resume_bottom_education_description_academy ul {
     font-size: 2%;
+  }
+  .portfolio_desciption{
+    width: 90%;
   }
   /* skill */
   .skill {
@@ -754,10 +767,10 @@ body {
     height: 50%;
   }
   .resume_bottom_external {
-    width: 100%;
+    width: 80%;
   }
   .resume_bottom_education_description_academy {
-    width: 100%;
+    width: 130%;
   }
   .portfolio {
     height: auto;
@@ -777,7 +790,7 @@ body {
   }
   .portfolio_db,
   .portfolio_deajeon {
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
     height: auto;
   }
