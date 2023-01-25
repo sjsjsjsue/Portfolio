@@ -10,3 +10,14 @@
 - 포트폴리오 직접 제작
 - 플랫폼(깃허브, 노션 등 ) 이용
 - PPT (이용하지 않는게 좋음)
+
+#  포트폴리오 예시
+- https://woong1120.tistory.com/
+
+- https://puzzle-salmon-770.notion.site/6973b19a8a214d4faae002e5de689c49
+
+- https://pdyme.notion.site/pdyme/74c45971bf4d41ef842a5e05cba7b5c1
+
+- http://geunhwan.io.s3-website.ap-northeast-2.amazonaws.com/
+
+- http://stopu.io.s3-website.ap-northeast-2.amazonaws.com/
