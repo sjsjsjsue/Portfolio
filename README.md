@@ -21,3 +21,8 @@
 - http://geunhwan.io.s3-website.ap-northeast-2.amazonaws.com/
 
 - http://stopu.io.s3-website.ap-northeast-2.amazonaws.com/
+
+# 찾기
+- 사람인
+- 크레딧잡
+- 잡플래닛
